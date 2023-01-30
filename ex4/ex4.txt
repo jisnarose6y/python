@@ -1,0 +1,52 @@
+Exercise 1: Reverse a given string
+
+s=input("enter the word:")
+print(s[::-1])
+
+Exercise 2: Find the last position of a given substring
+Write a program to find the last position of a substring “Emma” in a given string.
+
+str1 = "Emma is a data scientist who knows Python. Emma works at google."
+print(str1.rfind("Emma"))
+
+
+Exercise 3: Remove empty strings from a list of strings
+str_list = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+a = []
+for s in str_list:
+    if s:
+        a.append(s)
+print(a)
+
+
+
+Exercise 4: Count all letters, digits, and special symbols from a given string
+
+s = input("Please Enter your String : ")
+alphabets = digits = special = 0
+
+for i in range(len(s)):
+    if(s[i].isdigit()):
+       digits +=1
+    if(s[i].isalpha()):
+        alphabets +=1
+else:
+    special +=1
+        
+print("\nTotal Number of Alphabets in this String :  ", alphabets)
+print("Total Number of Digits in this String :  ", digits)
+print("Total Number of Special Characters in this String :  ", special)
+
+
+
+
+
+Exercise 5:Append new string in the middle of a given string
+
+
+a=input("enter the string1:")
+b=input("enter the string2:")
+mid=len(a)//2
+x=a[:mid]+b+a[mid:]
+print(x)
+
