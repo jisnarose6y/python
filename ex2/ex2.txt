@@ -1,0 +1,62 @@
+Exercise 1: Reverse a list in Python
+
+
+l = [1,2,3,4,5,6]
+l.reverse()
+print(l)
+
+
+Exercise 2: Add new item to list after a specified item
+
+Write a program to add item 7000 after 6000 in the following Python List
+
+Given:
+
+list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+Expected output:
+
+[10, 20, [300, 400, [5000, 6000, 7000], 500], 30, 40]
+
+
+list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+list1[2][2].append('7000')
+print(list1)
+
+Exercise 3: Extend nested list by adding the sublist
+
+Given List:
+
+list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+
+# sub list to add
+sub_list = ["h", "i", "j"]
+Expected Output:
+
+['a', 'b', ['c', ['d', 'e', ['f', 'g', 'h', 'i', 'j'], 'k'], 'l'], 'm', 'n']
+
+
+
+list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+sub_list = ["h", "i", "j"]
+
+list1[2][1][2].extend(sub_list)
+print(list1)
+
+
+Exercise 4: Replace list’s item with new value if found
+You have given a Python list. Write a program to find value 20 in the list, and if it is present, replace it with 200. Only update the first occurrence of an item.
+
+
+list1 = [5, 10, 15, 20, 25, 50, 20]
+s=list1.index(20)
+list1[s]=200
+print(list1)
+
+
+Exercise 5: Remove all occurrences of a specific item from a list.
+Given a Python list, write a program to remove all occurrences of item 20.
+my_list = [5, 20, 15, 20, 25, 50, 20]
+
+for item in my_list:
+    my_list.remove(20)
+    print(my_list)
